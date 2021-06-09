@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.BarterApp">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo1"
+        android:label="BarterApplication"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.System_Home">
+
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".CalculateScore" />
+        <activity android:name=".ViewFeedback" />
+        <activity android:name=".offer_Stock" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".Room_Trading" />
+        <activity android:name=".ReportUser" />
+        <activity android:name=".OtherProfile" />
+        <activity android:name=".UpdateProductActivity" />
+        <activity android:name=".InforProductUser" />
+        <activity
+            android:name=".InforActivityUser"
+            android:label="@string/title_activity_infor_user"
+            android:theme="@style/Theme.System_Home.NoActionBar" />
+        <activity android:name=".bottomnavibar.Page_User" />
+        <activity android:name=".bottomnavibar.Page_Noti" />
+        <activity android:name=".bottomnavibar.Page_add" />
+        <activity android:name=".bottomnavibar.Page_group" />
+        <activity android:name=".RegisActivity" />
+        <activity android:name=".EditProfileUser" />
+        <activity
+            android:name=".MainActivity" />
+        <activity
+            android:name=".PostActivity"
+            android:parentActivityName=".bottomnavibar.Page_add" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".ItemList" />
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StockActivity"
+            android:parentActivityName=".bottomnavibar.Page_User" />
+    </application>
+
+</manifest>

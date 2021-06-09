@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:id="@+id/close_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="คำอธิบายในห้องแลกเปลี่ยน"
+                    android:fontFamily="@font/opun"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/TextAppColor"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• สถานะในห้องแลกเปลี่ยน"
+                    style="@style/FontBarterApp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="กำลังเลือกสินค้า : ผู้ใช้ยื่นข้อเสนอกันอยู่"
+                        android:textSize="14dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/selecting"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="เลือกสินค้าเสร็จสิ้น : ผู้ใช้เลือกสินค้าที่ต้องการแลกแล้ว"
+                        style="@style/FontBarterApp"
+                        android:textSize="14dp"
+                        android:textColor="@color/selected"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ยืนยันสินค้าเสร็จสิ้น : ผู้ใช้ยืนยันสินค้าที่จะแลกเปลี่ยน"
+                        style="@style/FontBarterApp"
+                        android:textSize="14dp"
+                        android:textColor="@color/ok"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="รับสินค้าเสร็จสิ้น : ผู้ใช้ได้ทำการแลกเปลี่ยนของกันสำเร็จ"
+                        style="@style/FontBarterApp"
+                        android:textSize="14dp"
+                        android:textColor="@color/traded"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• ปุ่มกดในห้องแลกเปลี่ยน"
+                    android:textStyle="bold"
+                    style="@style/FontBarterApp"
+                    android:textSize="16dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปุ่มเลือกสินค้า : ทำการล็อกสินค้าที่ต้องการแลก"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/selecting"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปุ่มแก้ไขสินค้า : ทำการปลดล็อกสินค้า"
+                        style="@style/FontBarterApp"
+                        android:textSize="14dp"
+                        android:textColor="@color/selected"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปุ่มยืนยันสินค้า : ทำการยืนยันสินค้าที่ต้องการแลกเปลี่ยน"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/ok"
+                        android:textSize="14dp"
+                        />
+
+                    <TextView
+                        style="@style/FontBarterApp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ปุ่มยืนยันรับสินค้า : ทำการยืนยันเมื่อแลกเปลี่ยนสินค้ากันสำเร็จ"
+                        android:textColor="@color/traded"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• วิธีการแลกเปลี่ยน"
+                    android:textStyle="bold"
+                    style="@style/FontBarterApp"
+                    android:textSize="16dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- ผู้ใช้สามารถเลือกสินค้าในคลังของอีกฝ่ายได้
+                    \n- สินค้าของเจ้าของโพสไม่สามารถเปลี่ยนแปลงได้
+                    \n- ผู้ใช้สามารถกดค้างที่สินค้า เพื่อดูรายละเอียดของสินค้าได้
+                    \n- ผู้ใช้สามารถใช้เงินแทนการแลกเปลี่ยนได้
+                    \n- ผู้ใช้สามารถแชทคุยกับอีกฝ่ายได้
+                    \n- ผู้ใช้สามารถยกเลิกการแลกเปลี่ยนได้"
+                        style="@style/FontBarterApp"
+                        android:textSize="14dp"
+                        android:textColor="@color/selecting"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo_explain"/>
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

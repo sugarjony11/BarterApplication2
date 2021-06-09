@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/slectitem"
+        android:title="เลือกสินค้า"
+        />
+    <item
+        android:id="@+id/coin"
+        android:title="ใช้เงิน"/>
+    <item
+        android:id="@+id/reset"
+        android:title="ลบสินค้า"/>
+    <item
+        android:id="@+id/cancel"
+        android:title="ยกเลิก"
+        />
+</menu>

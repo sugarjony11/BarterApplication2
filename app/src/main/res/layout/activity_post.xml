@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleApp3"
+    tools:context=".PostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="ลงประกาศสินค้า"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                style="@style/FontBarterApp"/>
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="372dp"
+                android:layout_height="190dp"
+                android:padding="20dp"
+                android:src="@drawable/ic_add"
+                android:onClick="selectImage"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backg_design"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ชื่อสินค้า"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"/>
+                    <EditText
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="สินค้า"
+                        android:textColorHint="@color/textsoftblack"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ประเภทสินค้า"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+                        />
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/purpleApp6"
+                        android:theme="@style/FontBarterApp"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ลักษณะสินค้า"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:theme="@style/CustomRadioTheme"
+                        android:gravity="center">
+                        <RadioButton
+                            android:id="@+id/firsthand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClick"
+                            style="@style/FontBarterApp"
+                            android:textColor="@color/purpleApp6"
+                            android:text="มือหนึ่ง"/>
+                        <RadioButton
+                            android:id="@+id/secondhand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioButtonClick"
+                            android:text="มือสอง"
+                            style="@style/FontBarterApp"
+                            android:textColor="@color/purpleApp6"
+                            android:layout_marginLeft="20dp"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="สภาพสินค้า"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"/>
+
+                    <EditText
+                        android:id="@+id/product_quality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColorHint="@color/textsoftblack"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+                        android:hint="90 %"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ระยะเวลาใช้งาน"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"/>
+
+                    <EditText
+                        android:id="@+id/product_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+                        android:textColorHint="@color/textsoftblack"
+                        android:hint="1 เดือน หรือ 1 ปี"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="รายละเอียดสินค้า"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"/>
+
+                    <EditText
+                        android:id="@+id/product_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="สินค้ามีรอยขีดข่วน"
+                        android:textColorHint="@color/textsoftblack"
+                        style="@style/FontBarterApp"
+                        android:textColor="@color/TextAppColor"
+
+                        />
+                </LinearLayout>
+
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:id="@+id/upload_button"
+                    style="@style/loginButton"
+                    android:layout_gravity="center_horizontal"
+                    android:text="อัพโหลดข้อมูลสินค้า  "
+                    app:initialCornerAngle="27dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"
+                    app:spinning_bar_width="4dp"
+                    android:fontFamily="@font/opun"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/categoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ลงประกาศสินค้า"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            style="@style/FontBarterApp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="เลือกสินค้าที่จะทำการลงประกาศ\nเพื่อใช้ในการแลกเปลี่ยน"
+            android:textAlignment="center"
+            style="@style/FontBarterApp"
+            android:textSize="12dp"
+            android:textColor="#514F54"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgadd"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/add_logo"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:onClick="upload_by_gallery"
+                style="@style/loginButton"
+                android:fontFamily="@font/opun"
+                android:backgroundTint="@color/purpleApp6"
+                android:layout_gravity="center_horizontal"
+                android:text="เลือกรูปจากคลังรูปภาพ"
+                android:textSize="13dp"
+                android:layout_width="200dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

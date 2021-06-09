@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".ReportUser"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="รายงานผู้ใช้"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:fontFamily="@font/opun"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/TextAppColor"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_report"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="ผู้ใช้รายนี้มีพฤติกรรมที่ไม่เหมาะสม"
+                android:textSize="13dp"
+                style="@style/textstyle"
+                android:fontFamily="@font/opun"
+                android:textColor="@color/TextAppColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:theme="@style/CustomRadioTheme"
+
+            >
+            <RadioButton
+                android:id="@+id/report1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="เป็นบัญชีผู้ใช้ปลอม"
+                android:textSize="12dp"
+                style="@style/FontBarterApp"
+                android:onClick="reportClick"
+                android:textColor="@color/TextAppColor"/>
+            <RadioButton
+                android:id="@+id/report2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                style="@style/FontBarterApp"
+                android:text="หลอกลวง ทุจริต"
+                android:onClick="reportClick"
+                android:textColor="@color/TextAppColor"/>
+            <RadioButton
+                android:id="@+id/report3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                style="@style/FontBarterApp"
+                android:text="แอบอ้างใช้รูปของบุคคลอื่น"
+                android:onClick="reportClick"
+                android:textColor="@color/TextAppColor"/>
+            <RadioButton
+                android:id="@+id/report4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                style="@style/FontBarterApp"
+                android:text="คุกคามด้วยคำพูด พูดจาไม่เหมาะสม"
+                android:onClick="reportClick"
+                android:textColor="@color/TextAppColor"/>
+            <RadioButton
+                android:id="@+id/report5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                style="@style/FontBarterApp"
+                android:text="มีรูปภาพเนื้อหาที่ไม่เหมาะสม"
+                android:onClick="reportClick"
+                android:textColor="@color/TextAppColor"/>
+
+        </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/CancelBtn"
+                style="@style/loginButton"
+                android:layout_width="130dp"
+                android:layout_gravity="center_horizontal"
+                android:text="ยกเลิก"
+                android:fontFamily="@font/opun"
+
+                />
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/ReportBtn"
+                style="@style/loginButton"
+                android:layout_width="130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="รายงาน"
+                android:fontFamily="@font/opun"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"/>
+    </LinearLayout>
+
+</LinearLayout>

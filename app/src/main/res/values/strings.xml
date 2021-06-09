@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">InstagramKotlin</string>
+
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="system_name">แอปพลิเคชันสำหรับแลกเปลี่ยนสิ่งของ</string>
+    <string name="about">ศูนย์รวมการแลกเปลี่ยนสิ่งของ ที่พวกคุณสามารถนำของที่ไม่ใช้แล้ว
+มาแลกเปลี่ยนกันได้</string>
+    <string name="now_regis">ผู้ใช้ใหม่?  </string>
+    <string name="now_regis1">สมัครเดี๋ยวนี้</string>
+    <string name="regis">สมัครสมาชิก</string>
+    <string name="back">ย้อนกลับ</string>
+
+
+    <string name="category">หมวดหมู่</string>
+    <string name="fasion">แฟชั่น</string>
+    <string name="furniture">เฟอร์นิเจอร์</string>
+    <string name="elec">เครื่องใช้ไฟฟ้า</string>
+    <string name="phone">อุปกรณ์อิเล็กทรอนิกส์</string>
+    <string name="draw">อุปกรณ์เครื่องเขียน</string>
+    <string name="toy">ของเล่น</string>
+
+
+    <string name="choose_from_gallery">เลือกรูปจากคลังรูปภาพ</string>
+    <string name="choose_from_camera">ถ่ายรูป</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_infor_user">InforActivityUser</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

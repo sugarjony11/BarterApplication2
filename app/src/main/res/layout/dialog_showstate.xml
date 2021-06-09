@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="สินค้าอยู่สถานะแลกเปลี่ยน"
+                android:lineSpacingMultiplier="1.5"
+                android:fontFamily="@font/opun"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/TextAppColor"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:lineSpacingMultiplier="1.25"
+                style="@style/FontBarterApp"
+                android:text="สินค้าชนิดนี้กำลังแลกเปลี่ยนอยู่\nไม่สามารถยื่นข้อเสนอได้"
+                android:textSize="13dp"
+                android:textColor="@color/TextAppColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/logo_showstate"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/OKBtn"
+                android:layout_marginTop="10dp"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#927697"
+                android:text="ตกลง "
+                android:fontFamily="@font/opun"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

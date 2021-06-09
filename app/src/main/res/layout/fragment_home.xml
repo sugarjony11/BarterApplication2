@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cardview"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="รายการสินค้า"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/FontBarterApp"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/Home_searchText"
+                    android:layout_width="280dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/bg_button"
+                    android:paddingStart="30dp"
+                    android:paddingLeft="10dp"
+                    android:hint="ค้นหา"
+                    android:textSize="14dp"
+                    style="@style/FontBarterApp"
+                    android:inputType="textPersonName"
+                    android:layout_height="40dp"
+                    android:background="@drawable/text_corner"
+                    />
+
+                <ImageView
+                    android:id="@+id/Home_search_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_search"/>
+                <!--            <ImageView-->
+                <!--                android:id="@+id/Home_clear_btn"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="5dp"-->
+                <!--                android:src="@drawable/ic_delete"/>-->
+            </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerViewHome"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/rv_row"
+            />
+
+
+        <!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+    </LinearLayout>
+
+</FrameLayout>
